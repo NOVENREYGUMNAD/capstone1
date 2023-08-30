@@ -1,0 +1,37 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3AAFA9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; 
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #FFD700; 
+}
