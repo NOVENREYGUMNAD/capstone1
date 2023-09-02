@@ -1,9 +1,8 @@
+/* Common styles for all screen sizes */
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #3AAFA9;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -13,10 +12,15 @@
     height: 250px;
 }
 
+
+section[section1] {
+    background-color: ;
+}
+
 nav {
-    
-    padding: 10px; 
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    background-color: teal;
 }
 
 nav ul {
@@ -28,16 +32,56 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 30px; 
-
+    margin-right: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
+/* Common styles for anchor hover (no padding and background) */
 nav ul li a:hover {
-    color: #FFD700; 
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (tablets) */
+    #image {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 10px; /* Adjust spacing */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust spacing between nav items */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide (mobile) */
+    #image {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        padding: 10px; /* Adjust padding */
+    }
+
+    nav ul li {
+        margin-right: 20px; /* Adjust spacing between nav items */
+    }
+
+    /* Adjust the background padding when hovering on mobile */
+    nav ul li a:hover {
+        padding: 5px 10px; /* Adjust padding */
+        background-color: black;
+    }
 }
