@@ -33,26 +33,42 @@ body {
 
 
 
-/* Media queries for responsive design */
-@media screen and (max-width: 768px) {
-    /* Styles for screens up to 768px wide (tablets) */
-    #image {
-        width: 150px;
-        height: 150px;
-    }
+/* Media query for responsive design for tablets including 768x1024 */
+@media screen and (max-width: 899px) {
+  /* Styles for screens up to 992px wide (tablets) */
+  body {
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
 
-    
+  /* Center the image in the landing section on tablets */
+  #text-container {
+    text-align: center;
+  }
+
+  /* Adjust the padding on the landing section for better spacing on tablets */
+  #landing {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Adjust padding on project items for tablets */
+  .p-5 {
+    padding: 15px;
+  }
+
+  /* Center the text in the contact section on tablets */
+  #contact h5 {
+    text-align: center;
+  }
+
+  /* Center the map image on tablets */
+  #map-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Add margin between form groups for tablets */
+  .form-group {
+    margin-bottom: 15px !important;
+  }
 }
-
-@media screen and (max-width: 480px) {
-    /* Styles for screens up to 480px wide (mobile) */
-    #image {
-        width: 100px;
-        height: 100px;
-    }
-
-/* CSS to style form groups */
-.form-group {
-  margin-bottom: 10px !important; /* Add margin between form groups */
-}
-
