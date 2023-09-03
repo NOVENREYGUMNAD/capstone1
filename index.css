@@ -6,45 +6,32 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+#Tools {
+    background-color: #88B04B !important; /* Red background color, !important to override other styles */
+}
+
 #image {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 
-section[section1] {
+#section1{
     background-color: ;
 }
 
-nav {
-    padding: 20px;
-    margin-top: 0px;
-    background-color: teal;
+
+#other-tools {
+    margin-top: 50px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 
-nav ul li {
-    display: inline;
-    margin-right: 30px;
-}
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/* Common styles for anchor hover (no padding and background) */
-nav ul li a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
 
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
@@ -54,14 +41,7 @@ nav ul li a:hover {
         height: 150px;
     }
 
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        margin-top: 10px; /* Adjust spacing */
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Adjust spacing between nav items */
-    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -71,17 +51,8 @@ nav ul li a:hover {
         height: 100px;
     }
 
-    nav {
-        padding: 10px; /* Adjust padding */
-    }
-
-    nav ul li {
-        margin-right: 20px; /* Adjust spacing between nav items */
-    }
-
-    /* Adjust the background padding when hovering on mobile */
-    nav ul li a:hover {
-        padding: 5px 10px; /* Adjust padding */
-        background-color: black;
-    }
+/* CSS to style form groups */
+.form-group {
+  margin-bottom: 10px !important; /* Add margin between form groups */
 }
+

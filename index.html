@@ -5,38 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CAPSTONE MAKING</title>
 
-<link rel="stylesheet" type="text/css" href="./index.css">
+<link rel="stylesheet" type="text/css" href="./index.css"> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 
 </head>
 <body>
 
 <!-- TOP NAVIGATION BAR -->
+<div id="navbar" class="sticky-top bg-primary text-center p-2">
+
+<a href="#Home"class="text-decoration-none text-white mx-4">Home</a>
+<a href="#Landing" class="text-decoration-none text-white mx-4">About Me</a>
+<a href="#Projects" class="text-decoration-none text-white mx-4">Projects</a>
+<a href="#Tools" class="text-decoration-none text-white mx-4">Tools</a>
+<a href="#Contact" class="text-decoration-none text-white mx-4">Contact</a>
 
 
-<nav>
-  <ul>
-    <li class="nav"><a href="#">Home</a></li>
-    <li class="nav"><a href="#">About Me</a></li>
-    <li class="nav"><a href="#">Projects</a></li>
-    <li class="nav"><a href="#">Contact</a></li>
-    <li class="nav"><a href="#">Tools</a></li>
-   </ul>
-</nav>
+</div>
 
 <!-- LANDING SECTION................................................................ -->
 
-<section class="section1">
+<section id="Landing">
 
-    <div>
-        <img src="images/rey.jpg" alt="an image of me" id="image">
+   <div class="container">
+  <div class="row">
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <!-- Image will be centered in desktop and medium screens -->
+      <img src="images/rey.jpg" alt="an image of me" id="image" class="img-fluid">
     </div>
-
-   <div class="text-container">
-    <h1>Noven Rey Gumnad</h1>
-    <h5>FULL-STACK WEB DEVELOPER</h5> 
-
-     <p>Jose Mari Chan is a renowned Filipino singer, songwriter, and businessman. He is often referred to as the "Father of Philippine Christmas Music" due to his popular Christmas songs that have become classics in the Philippines. Chan's career spans several decades, and his soothing voice and timeless hits have made him a beloved figure in Filipino music. Apart from his musical success, he is also known for his successful ventures in the business world.</p>   
-   </div>
+    <div id="text-container" class="col-md-6 mt-4 mb-4 d-flex justify-content-center align-items-center">
+      <div>
+        <h1>Noven Rey Gumnad</h1>
+        <h5>FULL-STACK WEB DEVELOPER</h5>
+        <p>
+          Noven Rey Gumnad is not just your ordinary full-stack web developer student; he's a dynamic force in the world of web development. As a dedicated learner at Zuitt, a prestigious online bootcamp coding program, Noven has not only honed his coding skills but also mastered the art of crafting innovative and user-friendly websites. With an unwavering passion for web development, Noven has consistently pushed the boundaries of creativity, leaving an indelible mark on the digital landscape. His commitment to excellence and penchant for staying ahead of industry trends make Noven Rey Gumnad a standout choice for any web development project
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </section>
 
@@ -44,49 +53,100 @@
 <!-- MY PROJECTS SECTION .........................................................-->
 
 
-<section>
+<section id="Projects">
+  <div class="text-center">
+    <h2>My Projects</h2>
+  </div>
 
-  <h2>My Projects</h2>
+<div id="color">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="p-5">
+        <a href="https://novenreygumnad.github.io/" target="_blank">
+          <img class="img-fluid" src="images/project1.png" alt="Project 1">
+        </a>
+        <h5 class="text-center">LGU Maco Website</h5>
+        <p class="text-justify">"One of my initial projects, during the early stages of my journey as a full-stack web developer, was creating a website for the LGU Maco in the province of Davao de Oro. I completed this project in just two months. Reflecting on it now, I'm filled with nostalgia for the excitement and joy I felt while coding it."</p>
+      </div>
+    </div>
 
+    <!-- Add more project items using the same structure -->
+    
+    <div class="col-md-4">
+      <div class="p-5">
+        <a href="https://www.w3schools.com/" target="_blank">
+          <img class="img-fluid" src="images/project2.png" alt="Project 2">
+        </a>
+        <h5 class="text-center">w3schools</h5>
+        <p class="text-justify">"This project serves as one of my main sources of inspiration, igniting my desire to create numerous websites of similar caliber. While building this website proved to be a formidable challenge, every bug I resolved became a stepping stone to the satisfaction and joy of the creative process."</p>
+      </div>
+    </div>
 
-<div id="Projects">
-  <a href="https://novenreygumnad.github.io/" target="_blank">
-    <img src="images/project1.png" width="220" height="200">
-   <a/>
-   <h5>LGU Maco Website</h5>
-  <p>"One of my initial projects, during the early stages of my journey as a full-stack web developer, was creating a website for the LGU Maco in the province of Davao de Oro. I completed this project in just two months. Reflecting on it now, I'm filled with nostalgia for the excitement and joy I felt while coding it."
-  </p>
-</div>
-
-
-<div>
-  <a href="https://www.w3schools.com/" target="_blank">
-     <img src="images/project2.png" width="220" height="200">
-  </a>
-
-  <h5>w3schools</h5>
-  <p>"This project serves as one of my main sources of inspiration, igniting my desire to create numerous websites of similar caliber. While building this website proved to be a formidable challenge, every bug I resolved became a stepping stone to the satisfaction and joy of the creative process."</p>
-</div>
-
-
-<div>
-
-<a href="https://www.edx.org/" target="_blank">
-  <img src="images/project3.png" width="220" height="200">
-</a>
-<h5>edx Online School</h5>
-  <p>"Similar to many other websites, this platform is a valuable resource for both students and out-of-school youth. I firmly believe that creating more websites like this can provide opportunities for everyone, regardless of whether they are in school or not, as long as they have access to the internet and a device."</p>
-</div>
-  
+    <div class="col-md-4">
+      <div class="p-5">
+        <a href="https://www.edx.org/" target="_blank">
+          <img class="img-fluid" src="images/project3.png" alt="Project 3">
+        </a>
+        <h5 class="text-center">edx Online School</h5>
+        <p class="text-justify">"Similar to many other websites, this platform is a valuable resource for both students and out-of-school youth. I firmly believe that creating more websites like this can provide opportunities for everyone, regardless of whether they are in school or not, as long as they have access to the internet and a device."</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 <!-- TOOLS SECTION ...............................................................-->
 
-<section>
-  <div id="tools">
+<section id="Tools">
+
+ <div class="text-center">
     <h2>Tools</h2>
-  </div>
+ </div>
+
+               
+
+                      <div class="text-center">
+                         <h5>Front End</h5>
+                      </div>
+
+                
+                <div id="tools-1" class="d-flex justify-content-center justify-content-md-between justify-content-lg-around">
+
+                        <img width="100" src="images/html.png"/>
+                        <img width="100" src="images/css.png"/>
+                        <img width="100" src="images/js.png"/>
+                        <img width="100" src="images/bootstrap.png"/>
+                </div>
+
+                       <div class="text-center">
+                            <h5>MERN</h5>
+                       </div>
+
+                 <div id="tools-2" class="d-flex justify-content-center justify-content-md-between justify-content-lg-around">
+
+                        <img width="100" src="images/logo-mongodb.png"/>
+                        <img width="100" src="images/logo-nodejs.png"/>
+                        <img width="100" src="images/logo-expressjs.png"/>
+                        <img width="100" src="images/logo-react.png"/>
+                        
+                </div>
+
+                       <div class="text-center">
+                            <h5>Other Tools</h5>
+                       </div>
+
+                 <div id="tools-3" class="d-flex justify-content-center justify-content-md-between justify-content-lg-around">      
+                        <img width="100" src="images/logo-git.png"/>
+                        <img width="100" src="images/logo-sublime-text-3.png"/>
+                        <img width="100" src="images/logo-postman.png"/>
+                        <img width="100" src="images/logo-heroku.png"/>
+                 </div>
+         
+        
+
+   
+  
 </section>
 
 
@@ -94,37 +154,51 @@
 <!-- CONTACT SECTION ..............................................................-->
 
 
-<section>
+<section id="Contact-form">
 
-<div id="map-img">
 
+
+
+<div class="text-center">
   <h5>Visit Us</h5>
-
-  <img src="images/map.png">
-  
+<div id="map-img">
+  <img src="images/map.png" width="350" height="300">  
 </div>
 
-  <div id="Contact">
-    <h2>Message Us</h2> 
-<form action="https://google.com">
+  <div id="text-center">
+    <h5>Message Us</h5> 
+  </div>
 
-     <label for="first_name">First Name:</label>
-     <input type="text" name="first_name" id="first_name" required autocomplete>
 
-     <label for="last_name">Last Name:</label>
-     <input type="text" name="last_name" id="last_name" required autocomplete>
+<div>
+  <form action="https://google.com">
+    <div class="form-group">
+      <label for="full_name">Full Name:</label>
+      <input type="text" name="full_name" id="full_name" required autocomplete>
+    </div>
 
-     <label for="email">Email:</label>
-     <input type="text" name="email" id="email" required autocomplete>
-   
+    <div class="form-group">
+      <label for="full_address">Full Address:</label>
+      <input type="text" name="full_address" id="full_address" required autocomplete>
+    </div>
 
-      <button type="send">Send</button>
-      
-    </form>
- </div>
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="text" name="email" id="email" required autocomplete>
+    </div>
+
+    <button type="send">Send</button>
+  </form>
+</div>
+
+
 
 </section>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 
 </body>
